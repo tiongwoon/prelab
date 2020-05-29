@@ -74,7 +74,7 @@ a:link {
   line-height: 1.75;
   font-size: 1em;
   padding-right: 5vw;
-  width: 100%;
+  max-width: 100%;
   display: inline-block;
 }
 

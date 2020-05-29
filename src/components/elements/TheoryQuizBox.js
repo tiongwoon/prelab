@@ -205,6 +205,12 @@ export default function TheoryQuizBox() {
         To prepare for the lab, it is important that you remember the content in
         the Conservation of Momentum chapter. Below are 3 questions to help you
         refresh and strengthen your conceptual understanding.
+        <p>
+          <strong>
+            If you are using a mobile device to view this, you might need to
+            scroll to the left to see the entire line of the solution working.
+          </strong>
+        </p>
       </article>
 
       <article style={containerForQuizHeader}>
