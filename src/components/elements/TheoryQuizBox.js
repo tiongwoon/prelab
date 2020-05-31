@@ -164,14 +164,14 @@ export default function TheoryQuizBox() {
       return (
         <div>
           <p style={{ color: "#66A40A" }}>Correct!</p>
-          <br></br>
+          
           <Button
             style={showSolutionButtonStyle}
             onClick={() => handleToggle(questionNumber)}
           >
             Show solution
           </Button>
-          <Collapse isOpen={showCollapse(questionNumber)} marginTop="0.7em">
+          <Collapse isOpen={showCollapse(questionNumber)} >
             <br></br>
             {solutions.working[questionNumber - 1]}
           </Collapse>
@@ -180,15 +180,15 @@ export default function TheoryQuizBox() {
     } else {
       return (
         <div>
-          <p style={{ color: "#DD2501" }}>Wrong, Try again.</p>
-          <br></br>
+          <p style={{ color: "#DD2501" }}>Wrong, please try again.</p>
+          
           <Button
             style={showSolutionButtonStyle}
             onClick={() => handleToggle(questionNumber)}
           >
             Show solution
           </Button>
-          <Collapse isOpen={showCollapse(questionNumber)} marginTop="0.7em">
+          <Collapse isOpen={showCollapse(questionNumber)} >
             <br></br>
             {solutions.working[questionNumber - 1]}
           </Collapse>
@@ -317,7 +317,7 @@ export default function TheoryQuizBox() {
             >
               Hint
             </Button>
-            <Collapse isOpen={showHint} marginTop="0.7em">
+            <Collapse isOpen={showHint} >
               This question is similar to question 1. The only difference here
               is that data is given for the velocity. So, you need to think of a
               way to find the integral, or in other words, the sum.
@@ -371,7 +371,7 @@ const showSolutionButtonStyle = {
   border: "none",
   borderRadius: "4px",
   color: "#003E74",
-  marginTop: "1em",
+  cursor: "pointer"
 };
 
 const imageStyle = {

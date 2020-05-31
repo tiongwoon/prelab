@@ -22,29 +22,31 @@ export default function Home(props) {
           </div>
           <article className="textAreaFloating">
             <p>
-            This website will help you prepare adequately for the Fluid
-            Mechanics Drag Lab. You can keep track of your progress with the
-            progress bar at the navigation column on the left of the page. Make
-            sure to click the 'Complete and Proceed' button at the bottom of
-            every page to save your progress and be directed to the next
-            section. You can either follow the chronological order from top to
-            bottom of the sections in the navigation bar on the left or you can
-            direct your own learning and choose which section you want to
-            explore.
-            </p><br></br>
+              This website will help you prepare adequately for the Fluid
+              Mechanics Drag Lab. You can keep track of your progress with the
+              progress bar at the navigation column on the left of the page.
+              Make sure to click the 'Complete and Proceed' button at the bottom
+              of every page to save your progress and be directed to the next
+              section. You can either follow the chronological order from top to
+              bottom of the sections in the navigation bar on the left or you
+              can direct your own learning and choose which section you want to
+              explore.
+            </p>
+            <br></br>
             <p>
               The lab preparation material is broken down to 5 distinct sections
               as below, with each providing key ideas to familiarise yourself
               with before attending the lab session. Finally, information on
               your tasks in the lab and the next steps after the lab are
               detailed as below.
-            </p><br></br>
+            </p>
+            <br></br>
             <p>
-              This preparation should take <strong>around 30 minutes to complete</strong>, but
-              will vary depending on how long you take to solve the quiz. As
-              such, don't spend too long on getting the answer right, just make
-              sure you understand the techniques as they will come in handy for
-              the lab.
+              This preparation should take{" "}
+              <strong>around 30 minutes to complete</strong>, but will vary
+              depending on how long you take to solve the quiz. As such, don't
+              spend too long on getting the answer right, just make sure you
+              understand the techniques as they will come in handy for the lab.
             </p>
           </article>
         </div>
@@ -56,21 +58,63 @@ export default function Home(props) {
               Your Task!
             </span>
             <br></br>
+            <p>
+              <strong>The objective of the lab is to investigate the effects of plate
+              size and shape as well as the air speed on the drag force.</strong>
+            </p>
             <br></br>
-            The objective of the lab is to investigate the effects of plate size
-            and shape as well as the air speed on the drag force.
+            <p>
+              During the session, <strong>you will be splitted into 2
+              sub-groups.</strong>
+            </p>
             <br></br>
+            <p> <strong>The first sub-group</strong> will:</p>
+            <ol>
+              <li>
+                Measure the drag on a different sizes of discs using the
+                balance.
+              </li>
+              <li>
+                Compare your results to the other group who has a different disc
+                size.
+              </li>
+              <li>Measure one wake velocity profile with the pitot tube.</li>
+            </ol>
             <br></br>
-            Therefore, during the session, you will be splitted into groups and
-            each group will:
+            <p>
+              When comparing drag measurements, consider the drag force and drag
+              coefficient. The data set given in both the lab and the drag
+              balance questions can be thought of as coming from the same
+              experiment. In the theory section, you calculate drag force from a
+              wake profile. In the drag balance section, you calculate drag
+              force from a drag balance. Same applies to the drag coefficient.
+              In principle, they should agree with each other. But as you can
+              see in the lab, they differ ever so slightly. What could be the
+              source of such discrepancy?
+            </p>
             <br></br>
-            1. Measure the drag on a different sizes of discs using the balance.
+            <p>
+              <strong>The second sub-group will choose one </strong>  of the following three
+              challenges relating to the flow over circular disc. You will be
+              provided with LEGO disc, LEGO bricks, and plasticine.
+            </p>
+            <ol>
+              <li>Minimise the drag in a disc</li>
+              <li>
+                Maximise the drag on a disc (without increasing its diameter)
+              </li>
+              <li>
+                Minimise the drag on a 'wing mirror' modelled by a disc;
+                material can only be added to upstream side
+              </li>
+            </ol>
             <br></br>
-            2. Measure one wake velocity profile with the pitot tube.
-            <br></br>
-            <br></br>
-            When comparing drag measurements, consider the drag force and drag
-            coefficient.
+            <p>
+              Your sub-group can start building your shape once you enter the
+              lab. You can test your shape after your colleagues have completed
+              their measurements. <strong>Record your shape with a photo and
+              measurements of the drag.</strong> Remember to clean up before you leave.
+            </p>
           </div>
           <div style={taskStyle}>
             <span style={{ fontWeight: "900", fontSize: "1.5em" }}>

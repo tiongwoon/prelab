@@ -213,7 +213,7 @@ export default function LabQuiz() {
     } else {
       return (
         <div>
-          <p style={{ color: "#DD2501" }}>Wrong, Try again.</p>
+          <p style={{ color: "#DD2501" }}>Wrong, please try again.</p>
           
           <Button
             style={showSolutionButtonStyle}
@@ -221,7 +221,7 @@ export default function LabQuiz() {
           >
             Show solution
           </Button>
-          <Collapse isOpen={showCollapse(questionNumber)} marginTop="0.7em">
+          <Collapse isOpen={showCollapse(questionNumber)} >
             <br></br>
             {solutions.working[questionNumber - 1]}
           </Collapse>

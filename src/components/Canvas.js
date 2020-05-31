@@ -538,7 +538,7 @@ export default function Canvas(props) {
       } else {
         return (
           <div>
-            <p style={{ color: "#DD2501" }}>Wrong, try again.</p>
+            <p style={{ color: "#DD2501" }}>Wrong, please try again.</p>
             <Button
               style={showSolutionButtonStyle}
               onClick={() => handleToggle(1)}
@@ -559,7 +559,7 @@ export default function Canvas(props) {
           {math.round(answerTwo, 2) === 0.28 ? (
             <p style={{ color: "#66A40A" }}>Correct</p>
           ) : (
-            <p style={{ color: "#DD2501" }}>Wrong, try again.</p>
+            <p style={{ color: "#DD2501" }}>Wrong, please try again.</p>
           )}
           <Button
             style={showSolutionButtonStyle}
@@ -567,7 +567,7 @@ export default function Canvas(props) {
           >
             Show solution
           </Button>
-          <Collapse isOpen={showTwo} marginTop="0.7em">
+          <Collapse isOpen={showTwo}>
             <br></br>
             <Solution questionNumber={2} />
           </Collapse>
@@ -579,7 +579,7 @@ export default function Canvas(props) {
           {math.round(answerThree, 3) === 0.059 ? (
             <p style={{ color: "#66A40A" }}>Correct</p>
           ) : (
-            <p style={{ color: "#DD2501" }}>Wrong, try again.</p>
+            <p style={{ color: "#DD2501" }}>Wrong, please try again.</p>
           )}
 
           <Button
