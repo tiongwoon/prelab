@@ -1,25 +1,9 @@
 import React, { useState } from "react";
 import { Collapse, Button } from "@chakra-ui/core";
 import MathJax from "react-mathjax2";
-//import NormalDistribution from "normal-distribution";
 import * as math from "mathjs";
 
 export default function TheoryQuizBox() {
-  //const maxSpeed = 20;
-  //to generate and calculate answer for wake profile
-  // const mean = math.randomInt(10, 17);
-  // const std = math.randomInt(2, 8);
-  // const normDist = new NormalDistribution(mean, std);
-  // const v1 = normDist.pdf(mean);
-  // const v4 = normDist.pdf(std * 2);
-  // const r2 = std / 3 + mean;
-  // const r3 = (std / 3) * 2 + mean;
-  // const v2 = normDist.pdf(r2);
-  // const v3 = normDist.pdf(r3);
-  // const V1 = math.round(maxSpeed - maxSpeed * v1);
-  // const V4 = math.round(maxSpeed - maxSpeed * v4);
-  // const V2 = math.round(maxSpeed - maxSpeed * v2);
-  // const V3 = math.round(maxSpeed - maxSpeed * v3);
 
   //for the collapse
   const [showOne, setShowOne] = useState(false);

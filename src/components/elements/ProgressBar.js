@@ -24,9 +24,7 @@ export class ProgressBar extends Component {
 export default ProgressBar
 
 const Bar = {
-    //position: "relative",
-    //top: "33vh",
-    //left: "20vw",
+
     width: "50vw",
     height: "20px",
     backgroundColor: "#3A3A3A",
@@ -34,9 +32,7 @@ const Bar = {
 }
 
 const headerStyle = {
-    //position: "relative",
-    //top: "30vh",
-    //left: "20vw",
+
     marginBottom: "0.75em",
     fontWeight:"900",
     fontSize: "1.5em",
