@@ -196,7 +196,7 @@ export default function LabQuiz() {
       //minus one here because index starts at 1 for easier reading
       return (
         <div>
-          <p style={{ color: "#66A40A" }}>Correct!</p>
+          <p style={{ color: "#0C7130" }}>Correct!</p>
           
           <Button
             style={showSolutionButtonStyle}
@@ -250,14 +250,16 @@ export default function LabQuiz() {
 
       <ol className="quizContainer">
         <li className="quizQuestion">
-          <p>What is the reading of the manometer? (Scale in mm)</p>
+          
           <form onSubmit={submitHandlerOne}>
+            <label for="manometer">What is the reading of the manometer? (Scale in mm) </label><br></br>
             <input
               name="answer"
               type="number"
               step="0.0001"
               onChange={changeHandlerOne}
               className="quizInputBox"
+              id="manometer"
             />
             <MathJax.Context input="tex">
               <MathJax.Node inline>mm~~</MathJax.Node>
@@ -274,17 +276,16 @@ export default function LabQuiz() {
         </li>
 
         <li className="quizQuestion">
-          <p>
-            The manometer is sloped and has a scale factor of 0.1, what is
-            the vertical height? (in mm, to 1 d.p.)
-          </p>
           <form onSubmit={submitHandlerTwo}>
+            <label for="manometer-height">The manometer is sloped and has a scale factor of 0.1, what is
+            the vertical height? (in mm, to 1 d.p.)</label> <br></br>
             <input
               name="answer"
               type="number"
               step="0.0001"
               onChange={changeHandlerTwo}
               className="quizInputBox"
+              id="manometer-height"
             />
             <MathJax.Context input="tex">
               <MathJax.Node inline>mm~~</MathJax.Node>
@@ -300,17 +301,17 @@ export default function LabQuiz() {
         </li>
 
         <li className="quizQuestion">
-          <p>
-            The manometer contains water (density 1000kg/m3). What is the
-            pressure difference it measured? (in Pa, answer to 3 d.p.)
-          </p>
+
           <form onSubmit={submitHandlerThree}>
+            <label for="manometer-pressure">The manometer contains water (density 1000kg/m3). What is the
+            pressure difference it measured? (in Pa, answer to 3 d.p.)</label> <br></br>
             <input
               name="answer"
               type="number"
               step="0.0001"
               onChange={changeHandlerThree}
               className="quizInputBox"
+              id="manometer-pressure"
             />
             <MathJax.Context input="tex">
               <MathJax.Node inline>Pa~~</MathJax.Node>
@@ -326,18 +327,18 @@ export default function LabQuiz() {
         </li>
 
         <li className="quizQuestion">
-          <p>
-            Given a temperature of 21°C and under atmospheric pressure of 101
-            kPa, estimate the density of air in the wind tunnel to 3 d.p. (in
-            S.I. units).
-          </p>
+
           <form onSubmit={submitHandlerFour}>
+            <label for="density">Given a temperature of 21°C and under atmospheric pressure of 101
+            kPa, estimate the density of air in the wind tunnel to 3 d.p. (in
+            S.I. units).</label> <br></br>
             <input
               name="answer"
               type="number"
               step="0.0001"
               onChange={changeHandlerFour}
               className="quizInputBox"
+              id="density"
             />
             <MathJax.Context input="tex">
               <MathJax.Node inline>{densityUnits}</MathJax.Node>
@@ -353,18 +354,18 @@ export default function LabQuiz() {
         </li>
 
         <li className="quizQuestion">
-          <p>
-            The manometer is reading the pressure difference from a
-            pitot-static tube facing into an air flow. How fast is the air
-            flowing? (in S.I. units)
-          </p>
+
           <form onSubmit={submitHandlerFive}>
+            <label for="air-speed">The manometer is reading the pressure difference from a
+            pitot-static tube facing into an air flow. How fast is the air
+            flowing? (in S.I. units)</label><br></br>
             <input
               name="answer"
               type="number"
               step="0.0001"
               onChange={changeHandlerFive}
               className="quizInputBox"
+              id="air-speed"
             />
             <MathJax.Context input="tex">
               <MathJax.Node inline>{speedUnits}</MathJax.Node>

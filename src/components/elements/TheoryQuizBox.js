@@ -147,7 +147,7 @@ export default function TheoryQuizBox() {
       //setting a range here to allow for error
       return (
         <div>
-          <p style={{ color: "#66A40A" }}>Correct!</p>
+          <p style={{ color: "#0C7130" }}>Correct!</p>
           
           <Button
             style={showSolutionButtonStyle}
@@ -270,12 +270,13 @@ export default function TheoryQuizBox() {
             />
             <br></br>
             <form onSubmit={submitHandlerOne}>
-              <label style={{ display: "block", paddingTop: "1em" }}>
+              <label for="drag" style={{ display: "block", paddingTop: "1em" }}>
                 Estimate the drag force on the object assuming atmospheric
                 pressure everywhere.
               </label>
               <input
-                name="answer"
+                name="drag"
+                id="drag"
                 type="number"
                 step="0.0001"
                 onChange={changeHandlerOne}
@@ -321,6 +322,7 @@ export default function TheoryQuizBox() {
               </label>
               <input
                 name="answer"
+                id="answer"
                 type="number"
                 step="0.0001"
                 onChange={changeHandlerTwo}

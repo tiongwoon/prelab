@@ -522,7 +522,7 @@ export default function Canvas(props) {
       if (math.round(answerOne) === 6) {
         return (
           <div>
-            <p style={{ color: "#66A40A" }}>Correct!</p>
+            <p style={{ color: "#0C7130" }}>Correct!</p>
             <Button
               style={showSolutionButtonStyle}
               onClick={() => handleToggle(1)}
@@ -557,7 +557,7 @@ export default function Canvas(props) {
       return (
         <div>
           {math.round(answerTwo, 2) === 0.28 ? (
-            <p style={{ color: "#66A40A" }}>Correct</p>
+            <p style={{ color: "#0C7130" }}>Correct</p>
           ) : (
             <p style={{ color: "#DD2501" }}>Wrong, please try again.</p>
           )}
@@ -577,7 +577,7 @@ export default function Canvas(props) {
       return (
         <div>
           {math.round(answerThree, 3) === 0.059 ? (
-            <p style={{ color: "#66A40A" }}>Correct</p>
+            <p style={{ color: "#0C7130" }}>Correct</p>
           ) : (
             <p style={{ color: "#DD2501" }}>Wrong, please try again.</p>
           )}
@@ -737,7 +737,7 @@ export default function Canvas(props) {
 
         <div style={quizContainerStyle}>
           <div style={addMargin}>
-            Here are some values you might need for the question below.
+            Here are some values you might need for the questions below.
             <ul>
               <li>
                 Disc Diameter,{" "}
@@ -769,16 +769,16 @@ export default function Canvas(props) {
               </li>
             </ul>
           </div>
-          <ol>
+          <ol style={addMargin}>
             <li>
-              <div style={addMargin}>
-                Can you identify the right amount of mass, in g, to add in order
-                to balance the drag force?
-              </div>
               <form onSubmit={(event) => submitHandler(event, 1)}>
+                <label for="mass">Can you identify the right amount of mass, in g, to add in order
+                to balance the drag force?</label><br></br>
                 <input
                   name="answer"
-                  type="string"
+                  id="mass"
+                  type="number"
+                  step="0.0001"
                   onChange={(event) => changeHandler(event, 1)}
                   className="quizInputBox"
                 />
@@ -795,14 +795,16 @@ export default function Canvas(props) {
               {answerOne ? Answer(1) : null}
             </li>
 
-            <li>
-              <div style={addMargin}>What is the drag force?</div>
+            <li style={addMargin}>
               <form onSubmit={(event) => submitHandler(event, 3)}>
+                <label for="force">What is the drag force?</label> <br></br>
                 <input
                   name="answer"
-                  type="string"
+                  type="number"
+                  step="0.0001"
                   onChange={(event) => changeHandler(event, 3)}
                   className="quizInputBox"
+                  id="force"
                 />
                 <MathJax.Context input="tex">
                   <MathJax.Node inline>N~~</MathJax.Node>
@@ -817,16 +819,16 @@ export default function Canvas(props) {
               {answerThree ? Answer(3) : null}
             </li>
 
-            <li>
-              <div style={addMargin}>
-                What is the drag coefficient of the disc? (Compare its value to
-                the one in the Theory section. What could be the reason they are
-                different?)
-              </div>
+            <li style={addMargin}>
               <form onSubmit={(event) => submitHandler(event, 2)}>
+                <label for="coefficient">What is the drag coefficient of the disc? (Compare its value to
+                the one in the Theory section. What could be the reason they are
+                different?)</label><br></br>
                 <input
+                id="coefficient"
                   name="answer"
-                  type="string"
+                  type="number"
+                  step="0.0001"
                   onChange={(event) => changeHandler(event, 2)}
                   className="quizInputBox"
                 />

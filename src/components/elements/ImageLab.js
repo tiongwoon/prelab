@@ -11,6 +11,7 @@ export default function ImageLab(props) {
                 width={1000}
                 height={600}
                 onClick={area => props.toggling(area)}
+                alt="A lab image"
             />
         </div>
     )
