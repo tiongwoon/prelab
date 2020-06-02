@@ -27,8 +27,8 @@ function SectionCards() {
         </a>
       </div>
       <div className="sectionCard">
-        <h2 style={titleStyle}>Lab Equipments</h2>
-        <h3 style={descriptionStyle}>Introduction to the equipments used during the lab.</h3>
+        <h2 style={titleStyle}>Lab Equipment</h2>
+        <h3 style={descriptionStyle}>Introduction to the equipment used during the lab.</h3>
         <a href="/lab">
           {isLabDone === "notdone" ? (
             <button className="buttonForSectionCards">Start now</button>

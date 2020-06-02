@@ -95,9 +95,9 @@ export default function Lab(props) {
   return (
     <>
       <main className="bodyWrapper">
-        <Header name="Lab Equipments" />
+        <Header name="Lab Equipment" />
         <section className="textArea">
-          In the lab, there are a few equipments which you will need to
+          In the lab, there are a few equipment which you will need to
           familarise its working principle in order to fully benefit from the
           lab session.
           <br></br>
