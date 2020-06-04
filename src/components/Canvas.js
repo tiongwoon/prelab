@@ -899,7 +899,7 @@ const altButtonStyle = {
   backgroundColor: "#3A3A3A",
   border: "none",
   borderRadius: "4px",
-  color: "#006EAF",
+  color: "#ffffff",
   boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.15)",
   position: "relative",
   left: "5vw",
