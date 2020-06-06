@@ -190,7 +190,7 @@ export default function Home(props) {
               </li>
               <br></br>
               <li>
-                Estimate the drag on the ircular disc (70 mm diameter, 30 Hz fan
+                Estimate the drag on the circular disc (70 mm diameter, 30 Hz fan
                 speed) using only velocity measurement (upstream and in the
                 wake). Use a control volume approach like the submarine question
                 in the Theory section. Convert your drag estimate into
