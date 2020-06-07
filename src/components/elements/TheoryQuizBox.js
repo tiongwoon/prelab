@@ -192,7 +192,7 @@ export default function TheoryQuizBox() {
         <p>
           <strong>
             If you are using a mobile device to view this, you might need to
-            scroll to the left to see the entire line of the solution working.
+            scroll to the left to see the entire line of the solution.
           </strong>
         </p>
       </article>
